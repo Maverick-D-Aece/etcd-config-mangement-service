@@ -1,0 +1,15 @@
+### PUT /put - Put request to put configuration to etcd server
+POST http://127.0.0.1:8080/put
+Content-Type: application/json
+
+{
+  "key": "daily",
+  "value": "500"
+}
+
+
+### GET /get/{key} - Get request to get a configuration from etcd server
+GET http://127.0.0.1:8080/get/daily
+
+### DELETE /delete/{key} - Delete request to delete a configuration from etcd server
+DELETE http://127.0.0.1:8080/delete/daily
